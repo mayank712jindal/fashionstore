@@ -1,0 +1,115 @@
+/*#D4D4D8
+#5C5C62*/
+html{
+	scroll-behavior: smooth;
+}
+.nav-bar{
+	overflow: hidden;
+	background-color: black;
+	margin: 0px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+.nav-bar li{
+	display: inline;
+	list-style-type: none;
+	color:white;
+}
+.nav-bar li a{
+	text-decoration: none;
+	float: right;
+	display: block;
+	color: white;
+	padding: 10px;
+	margin: 10px;
+	font-size: large;
+	text-align: center;
+}
+.nav-bar li a:hover{
+	transform: scale(1.1);
+}
+.nav-bar a img{
+	height: auto;
+	width: 25px;
+}
+#goupbutton{
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	right: 10px;
+	bottom: 10px;
+	z-index: 30;
+}
+.homepage1{
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+.homepage1 p {
+	font-size: 60px;
+	text-align: center;
+	font-weight: bolder;
+}
+.homepage2{
+	margin-bottom: 40px;
+}
+.homepage2 img{
+width: 90%;
+margin-left: 60px;	
+}
+.homepage3{
+	background-color: black;
+	padding: 30px;
+
+}
+.info th,.address th{
+	padding: 3px;
+	padding-right: 50px;
+	padding-left: 20px;
+	color: #878787;
+}
+.info td,.address td{
+	color:white;
+	padding-right: 50px;
+	padding-left: 20px;
+}
+.info{
+	float: left;
+	width: 55%;
+} 
+.address{
+	width: 45%;
+}
+.socialmedia h2{
+	color: #878787;
+	padding: 5px;
+}
+.socialmedia table{
+	margin-left: 20px;
+	width: 100%;
+}
+.socialmedia a img{
+	height: 50px;
+	width: 50px;
+	margin-right: 15px;
+}
+.socialmedia a img:hover{
+	transform: scale(1.1);
+}
+.socialmedia input{
+	height: 50px;
+	width: 300px;
+}
+.socialmedia button{
+	height: 50px;
+}
+.homepage4{
+	background-color: black;
+}
+.homepage4 p{
+	color: white;
+	text-align: center;
+	margin-bottom: 0;
+	padding-top: 10px;
+}

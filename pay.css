@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 1500px;
+  font-family: sans-serif;
+  background-color: #eeeef1;
+}
+
+
+.nav-bar{
+  overflow: hidden;
+  background-color: black;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.nav-bar li{
+  display: inline;
+  list-style-type: none;
+  color:white;
+}
+.nav-bar li a{
+  text-decoration: none;
+  float: right;
+  display: block;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  font-size: large;
+  text-align: center;
+}
+.nav-bar li a:hover{
+  transform: scale(1.1);
+}
+.nav-bar a img{
+  height: auto;
+  width: 25px;
+}
+ion-icon {
+  font-size: 25px;
+}
+.svg{
+  position: relative;
+}
+.svg h1 {
+  text-align:center;
+  font-size: 80px;
+  color:black;
+  margin-top: 80px;
+}
+.svg img {
+  margin-top: 50px;
+}
+
+.details-container {
+  width: 50%;
+  margin:auto;
+  background-color: #D4D4D8;
+  height: 650px;
+  margin-top:50px;
+  color:rgb(66, 64, 82);
+  font-family:sans-serif;
+  padding: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 5px rgb(66, 64, 82);
+  border-radius: 10px;;
+
+}
+.image-container {
+  width: 50%;
+
+  display: inline-flex;
+  height:150px;
+  float: left;
+ 
+}
+.heading-container {
+
+  display: inline-flex;
+  width: 50%;
+  height:150px;
+  float: left;
+  font-size: 35px;
+  text-align:center;
+ 
+}
+h3 {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.image-container>img {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  display: block;
+ 
+}
+.field-label {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top:10px;
+  font-size:1.5em;
+}
+.fields {
+  border:none;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:rgb(66, 64, 82);
+}
+.check {
+
+  height: 20px;
+  width: 20px;
+  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.checkbox-text {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#pay {
+  border:none;
+  font-size: 20px;
+  padding: 20px;
+  width: 25%;
+  display: block;
+  margin: 20px auto;
+  background-color: rgb(66, 64, 82);
+  color:rgba(255, 227, 217, 1.0);
+}
+#pay:hover {
+  background-color: green;
+  color:white;
+  animation-name: changeColor;
+  animation-duration: 0.5s;
+}
+@keyframes changeColor {
+  from{background-color: rgb(66, 64, 82);color: rgba(255, 227, 217, 1.0);
+  to{background-color:green;color:white;}}
+}

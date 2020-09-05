@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<title>Fashion Store | Details</title>
+  <link rel="stylesheet" type="text/css" href="details.css">
+ <!-- Bootstrap start -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  <!-- Bootstrap ends -->
+</head>
+<body id="main">
+<ul class="nav-bar">
+  <li><img src="photos/logo.jpg" height="58px" width="313px" style="margin-top: 2px;"></li>
+    <li style="float: right;"><a href="cart.html" class="cart"><img src="photos/cart.png"><span>0</span></a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="index.html">Home</a></li>
+  
+</ul>
+
+  <h1>Add Some Personal Details</h1>
+  <div class="details-container" id="detailForm">
+    <form action="pay.html">
+      <label class="field-label">Name</label>
+      <input type="text" class="fields" id="fname" onchange="javascript:giveName()" required>
+      <br>
+      <label class="field-label">House Number/Flat Number</label>
+      <input type="text" maxlength="4" class="fields" id="houseNumber" onchange="javascript:giveAddress('houseNumber')" required>
+      <br>
+      <label class="field-label">City</label>
+      <input type="text" class="fields" id ="city" onchange="javascript:giveAddress('city')" required>
+      <br>
+      <label class="field-label">State</label>
+      <input type="text" class="fields" id="state" onchange="javascript:giveAddress('state')" required>
+      <br>
+      <label class="field-label">Pin Code</label>
+      <input type="text" maxlength="6"  id="pinCode" onchange="javascript:giveAddress('pinCode')" class="fields" required>
+      <br>
+      <label class="field-label">Mobile Number</label>
+      <input type="tel" class="fields" id="mainMobileNumber" onchange="javascript:getMobileNumber()" required>
+      <br>
+      <label class="field-label">Alternate Mobile Number(optional)</label>
+      <input type="tel" class="fields" optional>
+      <br>
+      <input type="submit" value="Proceed" id="proceed">
+    </form>
+  </div>
+  <script src="main.js"></script>
+  <script src="women.js"></script>
+  <script src="details.js"></script>
+</body>
+</html>
