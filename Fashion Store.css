@@ -145,3 +145,8 @@ table,table th{
 	margin-bottom: 0;
 	padding-top: 10px;
 }
+@media (max-width:760px) {
+	.info{
+		flex-direction: column;
+	}
+}
