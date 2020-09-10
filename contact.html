@@ -3,6 +3,7 @@
 <head>
 	<title>Fashion Store | Contact Us</title>
 	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <!-- Bootstrap start -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +15,18 @@
 </head>
 <body id="main">
 
-<ul class="nav-bar">
-	<li><img src="photos/logo.jpg" height="58px" width="313px" style="margin-top: 2px;"></li>
-	  <li style="float: right;"><a href="cart.html" class="cart"><img src="photos/cart.png"><span>0</span></a></li>
-	<li><a href="contact.html">Contact Us</a></li>
-	<li><a href="shop.html">Shop</a></li>
-	<li><a href="index.html">Home</a></li>
-</ul>
+<!-- NAVBAR BEGINS -->
+<div class="topnav" id="myTopnav">
+	<a href="index.html" class="logo"><img src="photos/logo.jpg"></a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+	<a href="cart.html" class="cart"><img src="photos/cart.png"><span>0</span></a>
+	<a href="contact.html">Contact Us</a>
+	<a href="shop.html">Shop</a>
+	<a href="index.html">Home</a>
+</div>
+<!-- NAVBAR ENDS -->
 
 <div class="image">
 	<img src="photos/contact-us.svg">
@@ -79,6 +85,18 @@
 			<a href="#Name" ><img src="photos/form.svg" style="height: 50px; width: 50px;" id="formlink"></a>
 		</div>
 </div>
+
+<!-- js -->
+<script>
+	function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+</script>
 <script src="main.js"></script>
     <script src="women.js"></script>
     <script src="details.js"></script>
