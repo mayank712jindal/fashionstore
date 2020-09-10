@@ -2,20 +2,18 @@
 
 function giveName() {
   let x = document.getElementById("fname").value;
-  localStorage.setItem("nameUser",x);
+  localStorage.setItem("nameUser", x);
 }
 var text = "";
 function giveAddress(id) {
-
-  text += document.getElementById(id).value + "," ;
-  localStorage.setItem("fullAdress",text);
+  text += document.getElementById(id).value + ",";
+  localStorage.setItem("fullAdress", text);
 }
 
 function getMobileNumber() {
-  let x = document.getElementById('mainMobileNumber').value;
-  localStorage.setItem("mainMobileNumber",x);
+  let x = document.getElementById("mainMobileNumber").value;
+  localStorage.setItem("mainMobileNumber", x);
 }
-
 
 //Price and quantity
 let costToBePaid = localStorage.getItem("totalCost");
@@ -31,10 +29,10 @@ document.getElementById("orderPrice").innerHTML = "Rs." + costToBePaid;
 document.getElementById("orderQuantity").innerHTML = productsQuantity;
 
 let nameUser = localStorage.getItem("nameUser");
-document.getElementById("orderName").innerHTML = nameUser; 
+document.getElementById("orderName").innerHTML = nameUser;
 
 let userAddress = localStorage.getItem("fullAdress");
-document.getElementById('orderAddress').innerHTML = userAddress;
+document.getElementById("orderAddress").innerHTML = userAddress;
 
-let userMainMobileNumber = localStorage.getItem('mainMobileNumber');
-document.getElementById('orderMobileNumber').innerHTML = userMainMobileNumber;
+let userMainMobileNumber = localStorage.getItem("mainMobileNumber");
+document.getElementById("orderMobileNumber").innerHTML = userMainMobileNumber;

@@ -1,8 +1,8 @@
 html {
   scroll-behavior: smooth;
 }
-*{
-		transition: all 0.3s;
+* {
+  transition: all 0.3s;
 }
 body {
   margin: 0;
@@ -20,7 +20,7 @@ body {
   z-index: 10;
 }
 
-.topnav a{
+.topnav a {
   float: right;
   display: block;
   color: #f2f2f2;
@@ -29,17 +29,17 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-.topnav a:first-child{
-	float: left;
-	display: block;
-	padding: 6px 0px;
+.topnav a:first-child {
+  float: left;
+  display: block;
+  padding: 6px 0px;
 }
-.topnav a:first-child:hover{
-	transform: none;
+.topnav a:first-child:hover {
+  transform: none;
 }
-.topnav a:first-child img{
-	height:40px; 
-	width:223px;
+.topnav a:first-child img {
+  height: 40px;
+  width: 223px;
 }
 
 .topnav a:hover {
@@ -51,30 +51,34 @@ body {
 .topnav .icon {
   display: none;
 }
-.cart img{
-	width: 25px;
-	height: auto;
+.cart img {
+  width: 25px;
+  height: auto;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
   }
-  .topnav{
-	  padding: 0px 10px;
+  .topnav {
+    padding: 0px 10px;
   }
-  .topnav a{
-	  padding: 12px 4px;
+  .topnav a {
+    padding: 12px 4px;
   }
   .topnav a:hover {
-  transform: none; 
- }
+    transform: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -85,39 +89,39 @@ body {
     display: block;
     text-align: left;
   }
-   .topnav{
-	  padding: 0px 10px;
+  .topnav {
+    padding: 0px 10px;
   }
-  .topnav a{
-	  padding: 12px 4px;
+  .topnav a {
+    padding: 12px 4px;
   }
   .topnav a:hover {
-  transform: none; 
- }
+    transform: none;
+  }
 }
 ion-icon {
   font-size: 25px;
 }
-.image-card{
+.image-card {
   position: relative;
   margin-bottom: 20px;
 }
-.gridItem:hover  {
+.gridItem:hover {
   transform: scale(1.1);
 }
 .add-cart {
   display: none;
   text-decoration: none;
-  position:absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  right: 0  ;
+  right: 0;
   height: 10px;
   padding: 10px;
   /* display: block; */
-  background-color:black;
-  color:white;
+  background-color: black;
+  color: white;
   padding-bottom: 20px;
 }
 
@@ -127,11 +131,10 @@ ion-icon {
   overflow: auto;
   width: 75%;
   float: right;
-  margin-top:70px;
-
-
+  margin-top: 70px;
 }
-h1,p {
+h1,
+p {
   width: 250px;
   /* margin: 0; */
   padding: 0;
@@ -139,33 +142,27 @@ h1,p {
 }
 .image-card img {
   width: 250px;
-  padding:0;
-  
+  padding: 0;
 }
 img:hover {
-
   padding: 0;
 }
 .gridItem {
-
   width: auto;
   text-align: center;
-  margin:50px auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  margin: 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #sidebar {
-  border-right: 1px solid rgba(66, 64, 82,0.5);
+  border-right: 1px solid rgba(66, 64, 82, 0.5);
   float: left;
   width: 25%;
   height: 1400px;
   position: absolute;
   top: 60px;
-  background-color: #D4D4D8;
-
+  background-color: #d4d4d8;
 }
 #sidebar h2 {
-
   font-size: xx-large;
 }
 #sidebar li {
