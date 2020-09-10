@@ -125,13 +125,35 @@ ion-icon {
   padding-bottom: 20px;
 }
 
+.content{
+  display: flex;
+  box-sizing: border-box;
+}
 #productGrid {
+  flex: 1;
   display: grid;
   grid-template-columns: auto auto auto;
-  overflow: auto;
-  width: 75%;
-  float: right;
-  margin-top: 70px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  padding-top: 50px;
+ 
+}
+
+@media only screen and (max-width:1200px){
+  #productGrid {
+    grid-template-columns: auto auto ; 
+  }
+}
+@media only screen and (max-width:900px){
+  #sidebar {
+  display: none;
+  }
+}
+@media only screen and (max-width:600px){
+  #productGrid {
+    grid-template-columns:auto ; 
+  }
 }
 h1,
 p {
@@ -154,13 +176,12 @@ img:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #sidebar {
+  flex: 0 0 25%;
+  max-width: 300px;
+  min-width: 250px;
   border-right: 1px solid rgba(66, 64, 82, 0.5);
-  float: left;
-  width: 25%;
-  height: 1400px;
-  position: absolute;
-  top: 60px;
   background-color: #d4d4d8;
+  padding-top: 50px;
 }
 #sidebar h2 {
   font-size: xx-large;
