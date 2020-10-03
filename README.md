@@ -1,1 +1,1 @@
-# fashionstore
+# Fashionstore - A Shopping Website
